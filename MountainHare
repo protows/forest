@@ -1,0 +1,27 @@
+package lesson5;
+
+public class MountainHare {
+
+    // добавьте переменные и конструктор
+    private int age;
+    private double weight;
+    private int jumpLength;
+    private String color;
+    
+    public MountainHare(int age, double weight, int jumpLength, String color) {
+        this.age = age;
+        this.weight = weight;
+        this.jumpLength = jumpLength;
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Заяц-беляк: " +
+                "age=" + age +
+                ", weight=" + weight +
+                ", jumpLength=" + jumpLength +
+                ", color=" + color +
+                '.';
+    }
+}
