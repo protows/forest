@@ -1,0 +1,28 @@
+package lesson5;
+
+import java.util.List;
+import java.util.Arrays;
+import java.util.ArrayList;
+
+public class Forest {
+    private List<MountainHare> hares = new ArrayList<>();
+
+    // объявите недостающие переменные и добавьте конструктор
+    private String newSeason;
+    public Forest(String newSeason, MountainHare animal) {
+        this.newSeason = newSeason;
+        this.hares.add(animal);
+    }
+    
+    // добавьте метод setSeason(String newSeason)
+    // в этом методе реализуйте логику смены цвета шубок зайцев-беляков
+    public void setSeason(String newSeason){
+        this.newSeason = newSeason;
+    }
+
+    // добавьте метод printHares()
+    public void printHares(){
+        System.out.println(Arrays.toString(hares.toArray()));
+    }
+
+}
